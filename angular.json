@@ -102,6 +102,28 @@
           }
         }
       }
+    },
+    "storybook": {
+      "projectType": "application",
+      "root": "stories",
+      "sourceRoot": "stories",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "tsConfig": ".storybook/tsconfig.json",
+            "assets": [],
+            "styles": [],
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules",
+                "scss"
+              ]
+            }
+          }
+        }
+      }
     }
   }
 }
