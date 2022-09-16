@@ -1,0 +1,9 @@
+<button
+  type="button"
+  [attr.id]="'click me'"
+  [attr.aria-label]="'click to trigger callback'"
+  onclick="this.blur()"
+  (click)="callParentCallback()"
+>
+  Call Parent Callback
+</button>
